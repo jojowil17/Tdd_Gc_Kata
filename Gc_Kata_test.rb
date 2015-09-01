@@ -7,7 +7,12 @@ class GC_kata_test < Minitest::Test
 		      array = greene_county
 			  assert_equal(100, array.length)
 		end
+    
+        def test_first_element_in_array_is_1
+              results = greene_county
+			  assert_equal(1, results[0])
+		end  
 
-
+		
 end
 
