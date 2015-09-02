@@ -19,10 +19,20 @@ class GC_kata_test < Minitest::Test
 		end
 		
 		def test_last_element_in_array_is_100
-		results = greene_county
+		      results = greene_county
 		assert_equal(100, results[-1])
 		end
+        
+        def test_third_element_in_array_is_greene
+              results = greene_county
+			  assert_equal("greene", results[2])
+        end		
 		
+		def test_element_mod_3
+		results = greene_county
+		assert_equal("greene", results[-2])
+		assert_equal("greene", results[56])
+		end
 
 		
 end
